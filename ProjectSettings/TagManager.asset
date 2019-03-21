@@ -41,6 +41,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 34243949
+    locked: 0
+  - name: Map
+    uniqueID: 2367034721
+    locked: 0
+  - name: Notes
+    uniqueID: 366845943
+    locked: 0
+  - name: Player
+    uniqueID: 1897448795
+    locked: 0
   - name: Picker
     uniqueID: 2038866161
     locked: 0

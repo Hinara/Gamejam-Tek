@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class scrolling : MonoBehaviour
+public class Scrolling : MonoBehaviour
 {
     public float speed;
     public GameObject[] floor;

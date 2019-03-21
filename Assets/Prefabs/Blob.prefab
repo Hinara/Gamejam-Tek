@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2313439531294683336}
   - component: {fileID: 2313439531294683337}
-  - component: {fileID: 2313439531294683342}
   - component: {fileID: 4515797523473541041}
   m_Layer: 0
   m_Name: Blob
@@ -81,19 +80,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2313439531294683342
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2313439531294683343}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33c31064b32c33448aaeb8e6721ab4f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  picker: {fileID: 0}
 --- !u!95 &4515797523473541041
 Animator:
   serializedVersion: 3

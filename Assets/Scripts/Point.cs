@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class Point : MonoBehaviour
 {
-    [SerializeField]
     public float speed;
-    // Update is called once per frame
+    public float color;
+
+    void Start()
+    {
+        
+    }
+
     void Update()
     {
         transform.localPosition += Vector3.left * speed * Time.deltaTime;

@@ -72,6 +72,7 @@ public class GenerateMap : MonoBehaviour
             GameObject go = Instantiate(pointModel, transform);
             go.transform.localPosition += Vector3.right * start * moveSpeed;
             go.GetComponent<Point>().speed = moveSpeed;
+            go.GetComponent<Point>().color = Random.value;
         }
         catch
         {

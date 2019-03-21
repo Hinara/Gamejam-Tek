@@ -48,7 +48,7 @@ public class ColorPicker : MonoBehaviour
         return angle;
     }
 
-    uint GetColor()
+    public uint GetColor()
     {
         float preColor = (getAngle() / (360.0f / colorNo)) + 0.5f;
         if (preColor > colorNo)

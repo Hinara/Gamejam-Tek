@@ -20,11 +20,12 @@ public class ChangeColor : MonoBehaviour
 
     Color ConvertColor()
     {
-
         if (picker == null)
         {
             return Color.black;
         }
+        return picker.GetColorInfinite();
+        /*
         uint value = picker.GetColor();
 
         switch (value)
@@ -44,5 +45,6 @@ public class ChangeColor : MonoBehaviour
             default:
                 return Color.black;
         }
+        */
     }
 }

@@ -11,6 +11,38 @@ public class ColorPicker : MonoBehaviour
     [SerializeField]
     uint colorNo = 3;
 
+    public enum PointType
+    {
+        Perfect,
+        Nice,
+        Good,
+        Bad,
+        Miss
+    };
+
+    public PointType getPointType(Vector3 expected)
+    {
+        float absAngle = Mathf.Abs(Vector3.Angle(expected, gameObject.transform.position));
+
+        if (absAngle < 8.0f)
+        {
+            return PointType.Perfect;
+        }
+        if (absAngle < 25.0f)
+        {
+            return PointType.Nice;
+        }
+        if (absAngle < 55.0f)
+        {
+            return PointType.Good;
+        }
+        if (absAngle < 90.0f)
+        {
+            return PointType.Bad;
+        }
+        return PointType.Miss;
+    }
+
     void Start()
     {
         Cursor.visible = false;

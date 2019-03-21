@@ -27,19 +27,19 @@ public class ColorPicker : MonoBehaviour
     {
         float x = Input.GetAxis("Mouse X");
         float y = Input.GetAxis("Mouse Y");
-        Vector3 newPos = gameObject.transform.position + new Vector3(x, y) * speed;
+        Vector3 newPos = gameObject.transform.localPosition + new Vector3(x, y) * speed;
         if (newPos.magnitude > border)
         {
             newPos = newPos.normalized * border;
         }
-        gameObject.transform.position = newPos;
+        gameObject.transform.localPosition = newPos;
 
     }
 
     //Angle is always beetween 0 and 360
     float getAngle()
     {
-        Vector3 position = gameObject.transform.position;
+        Vector3 position = gameObject.transform.localPosition;
         float angle = Vector3.Angle(Vector3.right, position);
         if (position.y < 0)
         {

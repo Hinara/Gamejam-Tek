@@ -1,0 +1,175 @@
+Slimerunner
+Point 419
+Point 2133
+Point 3847
+Point 5562
+Point 6419
+Point 7276
+Point 8133
+Point 8991
+Point 9848
+Point 10705
+Point 11562
+Point 12419
+Point 12848
+Point 13277
+Stream 13705 14562
+Stream 15420 16277
+Stream 17134 17991
+Stream 18848 19706
+Stream 20563 21420
+Stream 22277 23134
+Stream 23992 24849
+Stream 25706 26563
+Point 27420
+Point 28278
+Point 29135
+Point 29563
+Point 29992
+Point 30849
+Point 31278
+Point 31706
+Point 32563
+Point 32992
+Point 33421
+Point 34278
+Point 34706
+Point 35135
+Point 35992
+Point 36849
+Point 37278
+Point 37707
+Point 38564
+Point 38992
+Point 39421
+Point 40278
+Point 40707
+Point 41135
+Point 41564
+Point 41993
+Point 42421
+Point 43278
+Point 43707
+Point 44136
+Point 44993
+Point 45421
+Point 45850
+Point 46707
+Point 47136
+Point 47564
+Stream 48422 49279
+Stream 50136 50993
+Stream 51850 52708
+Stream 53565 54422
+Point 55279
+Point 56136
+Stream 56994 57851
+Point 58708
+Point 59565
+Stream 60422 61280
+Point 62137
+Point 62994
+Stream 63851 64708
+Point 65566
+Point 66423
+Point 66851
+Point 67280
+Point 67709
+Point 68137
+Point 68994
+Point 69423
+Point 69852
+Point 70709
+Point 71137
+Point 71566
+Point 72423
+Point 72852
+Point 73280
+Point 74137
+Point 74566
+Point 74995
+Point 75423
+Point 75852
+Point 76280
+Point 76709
+Stream 77566 78423
+Stream 79281 80138
+Point 80566
+Point 80995
+Point 81424
+Point 81852
+Point 82709
+Point 83138
+Point 83567
+Stream 84424 85281
+Point 86138
+Point 86567
+Point 86995
+Stream 87853 88710
+Point 89567
+Point 89996
+Point 90424
+Point 90853
+Stream 91281 92139
+Point 92567
+Point 92996
+Point 93424
+Point 93853
+Point 94282
+Stream 94710 95567
+Point 95996
+Point 96853
+Point 97282
+Stream 97710 98568
+Point 99425
+Point 100282
+Point 101139
+Point 101996
+Point 102425
+Point 102854
+Stream 103282 104139
+Point 104997
+Point 105425
+Point 105854
+Stream 106711 107568
+Point 108425
+Point 108854
+Point 109283
+Point 110140
+Point 110568
+Point 110997
+Point 111854
+Point 112283
+Point 112711
+Stream 113568 114426
+Stream 115283 116140
+Point 116997
+Stream 117426 117854
+Stream 118712 119140
+Point 119569
+Point 120426
+Point 120855
+Point 121283
+Stream 122140 122998
+Stream 123855 124712
+Stream 125569 126426
+Stream 127284 128141
+Point 128998
+Point 129427
+Point 129855
+Point 130284
+Stream 130712 131570
+Stream 132427 133284
+Stream 134141 134998
+Stream 135856 136713
+Point 137141
+Point 137999
+Point 138856
+Point 139713
+Point 140570
+Point 141427
+Point 142285
+Point 144428
+Point 146142
+Point 147856
+Point 149571 

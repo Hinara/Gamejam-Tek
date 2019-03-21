@@ -21,9 +21,9 @@ public class scrolling : MonoBehaviour
         foreach (GameObject ground in floor)
         {
             if (ground.transform.position.x < -20)
-                ground.transform.position = new Vector3(20, -4f, 0);
+                ground.transform.position += new Vector3(40, 0, 0);
             else
-                ground.transform.position = new Vector3(ground.transform.position.x - (speed / 100), -4f, 0);
+                ground.transform.position += Vector3.left * speed * Time.deltaTime;
         }
     }
 }

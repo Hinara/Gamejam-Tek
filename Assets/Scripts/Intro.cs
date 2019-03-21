@@ -7,16 +7,16 @@ public class Intro : MonoBehaviour
     [SerializeField]
     ColorPicker picker;
     public int room;
-    private Vector3[] colors;
+    private float[] colors;
     public GameObject[] rooms;
 
     // Start is called before the first frame update
     void Start()
     {
-        colors = new Vector3[3];
-        colors[0] = new Vector3(-1.5f, -1.5f, 0);
-        colors[1] = new Vector3(-1.5f, 1.5f, 0);
-        colors[2] = new Vector3(1.5f, 0, 0);
+        colors = new float[3];
+        colors[0] = 0.60f;
+        colors[1] = 0.45f;
+        colors[2] = 0;
         room = 0;
         foreach (GameObject BackGround in rooms)
         {
@@ -28,12 +28,8 @@ public class Intro : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 expected = new Vector3(picker.transform.position.x + colors[room].x,
-            picker.transform.position.y + colors[room].y,
-            picker.transform.position.z + colors[room].z);
-
-        print(picker.getPointType(expected).ToString());
-        if (picker.getPointType(expected) == ColorPicker.PointType.Perfect && room < 1)
+        print(picker.getPointType(colors[room]).ToString());
+        if (picker.getPointType(colors[room]) == ColorPicker.PointType.Perfect && room < 1)
             room += 1;
         if (rooms[room].transform.position.y < 0)
             rooms[room].transform.position = new Vector3(0, rooms[room].transform.position.y + 0.1f, 0);

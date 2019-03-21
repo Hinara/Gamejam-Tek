@@ -5,14 +5,11 @@ using UnityEngine;
 public class scrolling : MonoBehaviour
 {
     public float speed;
-    public Sprite sprite;
     public GameObject[] floor;
 
     // Start is called before the first frame update
     void Start()
     {
-        foreach (GameObject ground in floor)
-            ground.GetComponent<SpriteRenderer>().sprite = sprite;
     }
 
     // Update is called once per frame

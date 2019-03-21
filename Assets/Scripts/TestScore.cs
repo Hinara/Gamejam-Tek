@@ -6,9 +6,11 @@ public class TestScore : MonoBehaviour
 {
     [SerializeField]
     ColorPicker picker;
+    [SerializeField]
+    float expected = 0.0f;
     // Update is called once per frame
     void Update()
     {
-        print(picker.getPointType(0.0f).ToString());
+        print(picker.getPointType(expected).ToString());
     }
 }

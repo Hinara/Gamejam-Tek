@@ -7,9 +7,11 @@ public class Point : MonoBehaviour
     public float speed;
     public float color;
 
+    IColorUtils colorUtils = new ColorUtils();
+
     void Start()
     {
-        
+        gameObject.GetComponent<SpriteRenderer>().color = colorUtils.getColor(color);
     }
 
     void Update()

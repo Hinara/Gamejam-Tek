@@ -9,7 +9,10 @@ public class ColorPicker : MonoBehaviour
     [SerializeField]
     float speed = 1.0f;
     [SerializeField]
-    uint colorNo = 3;
+    Transform picker;
+    [SerializeField]
+    SpriteRenderer[] sprites;
+
     IColorUtils colorUtils = new ColorUtils();
 
     public enum PointType
@@ -60,25 +63,30 @@ public class ColorPicker : MonoBehaviour
     void Update()
     {
         UpdatePosition();
+        Color color = GetColor();
+        foreach (SpriteRenderer sprite in sprites)
+        {
+            sprite.color = color;
+        }
     }
 
     void UpdatePosition()
     {
         float x = Input.GetAxis("Mouse X");
         float y = Input.GetAxis("Mouse Y");
-        Vector3 newPos = gameObject.transform.localPosition + new Vector3(x, y) * speed;
+        Vector3 newPos = picker.transform.localPosition + new Vector3(x, y) * speed;
         if (newPos.magnitude > border)
         {
             newPos = newPos.normalized * border;
         }
-        gameObject.transform.localPosition = newPos;
+        picker.transform.localPosition = newPos;
 
     }
 
     //Angle is always beetween 0 and 1
     float getValue()
     {
-        Vector3 position = gameObject.transform.localPosition;
+        Vector3 position = picker.transform.localPosition;
         float angle = Vector3.Angle(Vector3.right, position);
         if (position.y < 0)
         {
@@ -87,7 +95,7 @@ public class ColorPicker : MonoBehaviour
         return angle / 360.0f;
     }
 
-    public Color GetColorInfinite()
+    public Color GetColor()
     {
         return colorUtils.getColor(getValue());
     }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Point : MonoBehaviour
 {
@@ -24,7 +25,12 @@ public class Point : MonoBehaviour
     {
         if (transform.localPosition.x < 0.0f)
         {
+            gameObject.tag = "Untagged";
             Destroy(gameObject);
+            if (GameObject.FindGameObjectWithTag("Points") == null)
+            {
+                SceneManager.LoadScene("Intro");
+            }
         }
     }
 
@@ -32,7 +38,7 @@ public class Point : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            game.collide(color);
+            game.Collide(color);
         }
     }
 }

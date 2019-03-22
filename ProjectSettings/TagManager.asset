@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Lives
   - ColorPicker
+  - Points
   layers:
   - Default
   - TransparentFX

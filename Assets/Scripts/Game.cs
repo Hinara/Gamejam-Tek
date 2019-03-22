@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -32,6 +32,7 @@ public class Game : MonoBehaviour
         scoreText.GetComponent<MeshRenderer>().sortingLayerName = "Picker";
         scoreText.text = "0";
         new Parser(this).Parse(map.text);
+        gameObject.GetComponent<AudioSource>().clip.LoadAudioData();
     }
 
     public void addPoint(float value)
@@ -63,7 +64,7 @@ public class Game : MonoBehaviour
             Destroy(gameObject);
     }
 
-    public void collide(float color)
+    public void Collide(float color)
     {
         ColorPicker.PointType points = picker.getPointType(color);
         switch (points)

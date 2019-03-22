@@ -20,6 +20,14 @@ public class Point : MonoBehaviour
         transform.localPosition += Vector3.left * speed * Time.deltaTime;
     }
 
+    private void OnBecameInvisible()
+    {
+        if (transform.localPosition.x < 0.0f)
+        {
+            Destroy(gameObject);
+        }
+    }
+
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))

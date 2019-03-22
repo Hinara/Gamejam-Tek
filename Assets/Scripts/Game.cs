@@ -73,7 +73,7 @@ public class Game : MonoBehaviour
             Destroy(gameObject);
     }
 
-    public void Collide(float color)
+    public void Collide(float color, bool skipLifeLose)
     {
         ColorPicker.PointType points = picker.getPointType(color);
         switch (points)
@@ -91,7 +91,7 @@ public class Game : MonoBehaviour
                 score += 50;
                 break;
             case ColorPicker.PointType.Miss:
-                if (lives.LostLife())
+                if (!skipLifeLose && lives.LostLife())
                 {
                     SceneManager.LoadScene("GameOver");
                 }

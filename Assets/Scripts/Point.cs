@@ -7,6 +7,7 @@ public class Point : MonoBehaviour
 {
     public float speed;
     public float color;
+    public bool skipLifeLose = false;
     public Game game;
 
     IColorUtils colorUtils = new ColorUtils();
@@ -38,7 +39,7 @@ public class Point : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            game.Collide(color);
+            game.Collide(color, skipLifeLose);
         }
     }
 }

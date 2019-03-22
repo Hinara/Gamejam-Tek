@@ -74,13 +74,13 @@ public class Parser
     {
         if (args.Length != 3)
         {
+            Debug.Log(args.Length);
             return false;
         }
         try
         {
-
-            float start = float.Parse(args[1], CultureInfo.InvariantCulture);
-            float end = float.Parse(args[2], CultureInfo.InvariantCulture);
+            float start = float.Parse(args[1], CultureInfo.InvariantCulture) / 1000.0f;
+            float end = float.Parse(args[2], CultureInfo.InvariantCulture) / 1000.0f;
             game.addStream(start, end);
             return true;
         }

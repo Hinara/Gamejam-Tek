@@ -14,6 +14,8 @@ public class Game : MonoBehaviour
     [SerializeField]
     GameObject pointModel;
     [SerializeField]
+    GameObject streamModel;
+    [SerializeField]
     Lives lives;
     [SerializeField]
     ColorPicker picker;
@@ -47,6 +49,13 @@ public class Game : MonoBehaviour
 
     public void addStream(float start, float end)
     {
+        GameObject go = Instantiate(streamModel, entityBase);
+        go.transform.localPosition += Vector3.right * (shiftedStart + start) * moveSpeed;
+        Stream stream = go.GetComponent<Stream>();
+        stream.game = this;
+        stream.speed = moveSpeed;
+        stream.color = Random.value;
+        stream.duration = end - start;
     }
 
     private void Update()

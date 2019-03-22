@@ -1,0 +1,275 @@
+Slimerunner
+Point 428
+Point 1285
+Point 2142
+Point 2357
+Point 3000
+Point 3857
+Point 4714
+Point 5571
+Point 5785
+Point 6428
+Point 7285
+Point 8142
+Point 9000
+Point 9214
+Point 9857
+Point 10714
+Point 11571
+Point 12428
+Point 12642
+Point 13285
+Point 13714
+Point 14142
+Point 14571
+Point 15000
+Point 15428
+Point 16285
+Point 16714
+Point 17142
+Point 17571
+Point 18000
+Point 18428
+Point 18857
+Point 19714
+Point 20142
+Stream 20571 21000
+Point 21428
+Point 21857
+Stream 22285 22714
+Point 22928
+Point 23571
+Point 24000
+Point 24428
+Point 24642
+Point 24857
+Point 25285
+Point 25714
+Point 26571
+Point 27000
+Point 27428
+Point 28285
+Point 28714
+Point 29142
+Point 30000
+Stream 30428 30857
+Point 31285
+Stream 31714 32142
+Point 32571
+Point 33000
+Point 33428
+Point 33857
+Stream 34285 34714
+Point 35142
+Stream 35571 36000
+Point 36428
+Stream 36857 37285
+Point 37714
+Stream 38142 39000
+Point 39428
+Stream 39857 40714
+Stream 41142 42000
+Point 42428
+Stream 42857 43714
+Point 44142
+Point 44571
+Point 45000
+Point 45428
+Point 45857
+Stream 46285 46714
+Point 47142
+Point 47571
+Stream 48000 48428
+Point 48857
+Point 49285
+Stream 49714 50571
+Point 51000
+Stream 51428 52285
+Point 52714
+Stream 53142 54000
+Point 54428
+Point 54857
+Point 55285
+Point 55714
+Point 56142
+Point 56571
+Point 57000
+Point 57428
+Point 57857
+Stream 58285 59571
+Point 60000
+Point 60428
+Point 60857
+Point 61285
+Stream 61714 62142
+Stream 62571 63000
+Stream 63428 63857
+Stream 64285 64714
+Point 65142
+Point 65571
+Stream 66000 66428
+Point 66857
+Stream 67285 67714
+Point 68142
+Point 68571
+Point 69000
+Point 69428
+Point 69857
+Stream 70285 71142
+Point 71571
+Stream 72000 72857
+Point 73285
+Point 73714
+Point 74142
+Point 74571
+Point 75000
+Stream 75428 75857
+Point 76285
+Point 76714
+Stream 77142 77571
+Point 78000
+Point 78428
+Stream 78857 79285
+Stream 79714 80142
+Stream 80571 81857
+Stream 82285 82714
+Point 83142
+Point 83571
+Point 84000
+Point 84428
+Point 84642
+Point 85285
+Point 85714
+Point 86142
+Point 86357
+Point 87000
+Stream 87428 87857
+Point 88071
+Point 88714
+Point 89142
+Point 89571
+Point 89785
+Point 90428
+Point 90857
+Point 91285
+Point 91500
+Point 92142
+Point 92571
+Point 93000
+Point 93214
+Point 93857
+Point 94285
+Point 94714
+Point 94928
+Point 95571
+Point 96000
+Point 96428
+Point 96857
+Point 97285
+Stream 97714 99000
+Point 99428
+Point 99857
+Point 100285
+Point 100714
+Stream 101142 102428
+Point 102857
+Point 103285
+Point 103714
+Point 104142
+Stream 104571 105857
+Point 106285
+Point 106714
+Point 107142
+Point 107571
+Stream 108000 109285
+Point 109714
+Stream 110142 110571
+Point 111000
+Stream 111428 111857
+Point 112285
+Stream 112714 113142
+Point 113571
+Stream 114000 114428
+Point 114857
+Point 115285
+Point 115714
+Point 116142
+Point 116571
+Stream 117000 117428
+Point 117857
+Stream 118285 118714
+Point 119142
+Stream 119571 120000
+Point 120428
+Stream 120857 121285
+Point 121714
+Point 122142
+Point 122571
+Point 123000
+Stream 123428 123857
+Stream 124285 124714
+Stream 125142 125571
+Stream 126000 126428
+Point 126857
+Stream 127285 127714
+Point 128142
+Stream 128571 129000
+Point 129428
+Point 129857
+Stream 130285 130714
+Point 130928
+Point 131142
+Point 131571
+Point 132000
+Point 132428
+Point 132642
+Point 133285
+Point 133714
+Point 134142
+Point 134357
+Point 135000
+Point 135428
+Point 135857
+Point 136285
+Point 136714
+Point 137142
+Point 137571
+Point 138000
+Point 138428
+Point 138857
+Point 139285
+Point 139500
+Point 140142
+Stream 140571 141857
+Stream 142285 143571
+Point 144000
+Point 144428
+Point 144857
+Point 145285
+Stream 145714 147000
+Point 147428
+Point 147857
+Point 148285
+Point 148714
+Stream 149142 150428
+Point 150857
+Point 151285
+Point 152142
+Point 152571
+Point 153428
+Point 153857
+Point 154285
+Stream 154714 155142
+Point 155571
+Stream 156000 156428
+Point 156857
+Point 157285
+Point 157714
+Point 158571
+Point 159428
+Point 160285
+Point 161142
+Point 162000
+Point 162857
+Point 163714
+Point 164142

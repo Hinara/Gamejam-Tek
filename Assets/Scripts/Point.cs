@@ -22,10 +22,8 @@ public class Point : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        print("collide");
         if (collision.gameObject.CompareTag("Player"))
         {
-            print("test");
             game.collide(color);
         }
     }

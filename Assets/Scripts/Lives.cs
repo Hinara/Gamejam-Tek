@@ -15,7 +15,7 @@ public class Lives : MonoBehaviour
 
     public bool LostLife()
     {
-        if (number == 0)
+        if (number == 1)
         {
             return true;
         }

@@ -28,7 +28,6 @@ public class Stream : MonoBehaviour
 
     void spawnPoint(float value)
     {
-        print(value);
         GameObject newPoint = Instantiate(model, transform);
         newPoint.transform.localPosition = Vector3.right * value;
         Point point = newPoint.GetComponent<Point>();

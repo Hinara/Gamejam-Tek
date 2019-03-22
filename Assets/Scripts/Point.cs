@@ -23,7 +23,7 @@ public class Point : MonoBehaviour
 
     private void OnBecameInvisible()
     {
-        if (transform.localPosition.x < 0.0f)
+        if (transform.position.x < 0.0f)
         {
             gameObject.tag = "Untagged";
             Destroy(gameObject);

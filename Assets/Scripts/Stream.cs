@@ -34,5 +34,6 @@ public class Stream : MonoBehaviour
         point.color = color;
         point.speed = 0;
         point.game = game;
+        point.skipLifeLose = (value != 0.0f);
     }
 }

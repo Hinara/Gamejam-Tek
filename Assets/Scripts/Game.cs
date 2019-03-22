@@ -25,6 +25,8 @@ public class Game : MonoBehaviour
     TextMesh scoreText;
     [SerializeField]
     float shiftedStart = 3.0f;
+    [SerializeField]
+    string successScene = "Intro";
 
     uint score = 0;
     bool start = false;
@@ -45,6 +47,7 @@ public class Game : MonoBehaviour
         point.game = this;
         point.speed = moveSpeed;
         point.color = Random.value;
+        point.sceneSuccess = successScene;
     }
 
     public void addStream(float start, float end)
@@ -56,6 +59,7 @@ public class Game : MonoBehaviour
         stream.speed = moveSpeed;
         stream.color = Random.value;
         stream.duration = end - start;
+        stream.sceneSuccess = successScene;
     }
 
     private void Update()

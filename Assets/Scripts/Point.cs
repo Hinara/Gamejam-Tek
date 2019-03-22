@@ -9,6 +9,7 @@ public class Point : MonoBehaviour
     public float color;
     public bool skipLifeLose = false;
     public Game game;
+    public string sceneSuccess;
 
     IColorUtils colorUtils = new ColorUtils();
 
@@ -30,7 +31,7 @@ public class Point : MonoBehaviour
             Destroy(gameObject);
             if (GameObject.FindGameObjectWithTag("Points") == null)
             {
-                SceneManager.LoadScene("Intro");
+                SceneManager.LoadScene(sceneSuccess);
             }
         }
     }

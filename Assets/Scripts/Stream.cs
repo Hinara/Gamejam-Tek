@@ -9,6 +9,7 @@ public class Stream : MonoBehaviour
     public float duration;
     public GameObject model;
     public Game game;
+    public string sceneSuccess;
 
     void Start()
     {
@@ -34,5 +35,6 @@ public class Stream : MonoBehaviour
         point.speed = 0;
         point.game = game;
         point.skipLifeLose = (value != 0.0f);
+        point.sceneSuccess = sceneSuccess;
     }
 }

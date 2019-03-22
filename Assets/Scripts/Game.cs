@@ -17,6 +17,8 @@ public class Game : MonoBehaviour
     Lives lives;
     [SerializeField]
     ColorPicker picker;
+    [SerializeField]
+    Transform entityBase;
 
     uint score = 0;
     bool start = false;
@@ -28,7 +30,7 @@ public class Game : MonoBehaviour
 
     public void addPoint(float value)
     {
-        GameObject go = Instantiate(pointModel, transform);
+        GameObject go = Instantiate(pointModel, entityBase);
         go.transform.localPosition += Vector3.right * value * moveSpeed;
         Point point = go.GetComponent<Point>();
         point.game = this;

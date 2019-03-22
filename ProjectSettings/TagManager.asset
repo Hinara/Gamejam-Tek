@@ -55,6 +55,9 @@ TagManager:
   - name: Player
     uniqueID: 1897448795
     locked: 0
+  - name: Wheel
+    uniqueID: 2232660801
+    locked: 0
   - name: Picker
     uniqueID: 2038866161
     locked: 0

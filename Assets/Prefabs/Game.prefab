@@ -1054,6 +1054,7 @@ MonoBehaviour:
     type: 3}
   lives: {fileID: 7442647944570338605}
   picker: {fileID: 4938876961874344109}
+  entityBase: {fileID: 7442647944284062281}
 --- !u!82 &7600606994240597336
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1245,7 +1246,7 @@ PrefabInstance:
     - target: {fileID: 4694486080818437758, guid: 2b364c0508916774e8911c14689ba894,
         type: 3}
       propertyPath: m_SortingLayer
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4694486079565800823, guid: 2b364c0508916774e8911c14689ba894,
         type: 3}
@@ -1255,7 +1256,7 @@ PrefabInstance:
     - target: {fileID: 4694486079565800823, guid: 2b364c0508916774e8911c14689ba894,
         type: 3}
       propertyPath: m_SortingLayer
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4694486080131291033, guid: 2b364c0508916774e8911c14689ba894,
         type: 3}
@@ -1265,7 +1266,7 @@ PrefabInstance:
     - target: {fileID: 4694486080131291033, guid: 2b364c0508916774e8911c14689ba894,
         type: 3}
       propertyPath: m_SortingLayer
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6888118349790841094, guid: 2b364c0508916774e8911c14689ba894, type: 3}
@@ -1473,16 +1474,6 @@ PrefabInstance:
     - target: {fileID: 8476190137529364149, guid: 6f47c90f1ba8b3e4292e6ff7bd40bd29,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8476190137529364146, guid: 6f47c90f1ba8b3e4292e6ff7bd40bd29,
-        type: 3}
-      propertyPath: m_SortingLayerID
-      value: 2047142409
-      objectReference: {fileID: 0}
-    - target: {fileID: 8476190137529364146, guid: 6f47c90f1ba8b3e4292e6ff7bd40bd29,
-        type: 3}
-      propertyPath: m_SortingLayer
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2577170261121988418, guid: 6f47c90f1ba8b3e4292e6ff7bd40bd29,

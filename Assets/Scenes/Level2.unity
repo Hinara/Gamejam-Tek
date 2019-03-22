@@ -184,6 +184,11 @@ PrefabInstance:
       propertyPath: map
       value: 
       objectReference: {fileID: 4900000, guid: b1cb3b14354088341af6800463cb6486, type: 3}
+    - target: {fileID: 3084441670232412968, guid: 055def6594099b94fb8300fcb9432ec0,
+        type: 3}
+      propertyPath: successScene
+      value: Menu
+      objectReference: {fileID: 0}
     - target: {fileID: 7600606994240597336, guid: 055def6594099b94fb8300fcb9432ec0,
         type: 3}
       propertyPath: m_audioClip

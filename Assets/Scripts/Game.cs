@@ -21,6 +21,8 @@ public class Game : MonoBehaviour
     Transform entityBase;
     [SerializeField]
     TextMesh scoreText;
+    [SerializeField]
+    float shiftedStart = 3.0f;
 
     uint score = 0;
     bool start = false;
@@ -35,7 +37,7 @@ public class Game : MonoBehaviour
     public void addPoint(float value)
     {
         GameObject go = Instantiate(pointModel, entityBase);
-        go.transform.localPosition += Vector3.right * value * moveSpeed;
+        go.transform.localPosition += Vector3.right * (shiftedStart + value) * moveSpeed;
         Point point = go.GetComponent<Point>();
         point.game = this;
         point.speed = moveSpeed;
@@ -50,7 +52,7 @@ public class Game : MonoBehaviour
     {
         if (start == false)
         {
-            gameObject.GetComponent<AudioSource>().Play();
+            gameObject.GetComponent<AudioSource>().PlayDelayed(shiftedStart);
             start = true;
         }
     }

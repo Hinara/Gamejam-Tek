@@ -19,12 +19,16 @@ public class Game : MonoBehaviour
     ColorPicker picker;
     [SerializeField]
     Transform entityBase;
+    [SerializeField]
+    TextMesh scoreText;
 
     uint score = 0;
     bool start = false;
 
     private void Start()
     {
+        scoreText.GetComponent<MeshRenderer>().sortingLayerName = "Picker";
+        scoreText.text = "0";
         new Parser(this).Parse(map.text);
     }
 
@@ -79,7 +83,8 @@ public class Game : MonoBehaviour
                 {
                     SceneManager.LoadScene("GameOver");
                 }
-                break;
+                return;
         }
+        scoreText.text = score.ToString();
     }
 }

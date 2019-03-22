@@ -1055,6 +1055,7 @@ MonoBehaviour:
   lives: {fileID: 7442647944570338605}
   picker: {fileID: 4938876961874344109}
   entityBase: {fileID: 7442647944284062281}
+  scoreText: {fileID: 2092556837531318514}
 --- !u!82 &7600606994240597336
 AudioSource:
   m_ObjectHideFlags: 0

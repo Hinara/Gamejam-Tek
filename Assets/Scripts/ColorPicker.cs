@@ -27,7 +27,13 @@ public class ColorPicker : MonoBehaviour
 
     float getDiff(float f1, float f2)
     {
-        return Mathf.Abs(Mathf.Abs(f1 - 0.5f) - Mathf.Abs(f2 - 0.5f));
+        float res = Mathf.Abs(f1 - f2);
+        if (res > 0.5f)
+        {
+            res = 1.0f - res;
+        }
+        print(res);
+        return res;
     }
 
     public PointType getPointType(float expected)

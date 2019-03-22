@@ -3,25 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Globalization;
 
-public class GenerateMap : MonoBehaviour
-{
-    [SerializeField]
-    TextAsset map;
-    [SerializeField]
-    float moveSpeed = 1e4f;
-    [SerializeField]
-    GameObject pointModel;
-    bool start = false;
 
-    private void Start()
+public class Parser
+{
+    Game game;
+    public Parser(Game game)
+    {
+        this.game = game;
+    }
+
+    public bool Parse(string text)
     {
         bool success = true;
-        string[] lines = map.text.Split('\n');
+        string[] lines = text.Split('\n');
 
-        for (int i = 0; i < lines.Length; i++) {
+        for (int i = 0; i < lines.Length; i++)
+        {
             lines[i] = lines[i].TrimEnd('\r');
         }
-        print("Slimerunner".Length);
         if (lines.Length >= 1 && lines[0] == "Slimerunner")
         {
             for (int i = 1; i < lines.Length; i++)
@@ -34,27 +33,21 @@ public class GenerateMap : MonoBehaviour
                 success = success && res;
             }
         }
+        return success;
     }
-    private void Update()
-    {
-        if (start == false)
-        {
-            gameObject.GetComponent<AudioSource>().Play();
-            start = true;
-        }
-    }
-
     private bool parseLine(string line)
     {
         string[] arr = line.Split(' ');
         if (arr.Length >= 1)
         {
-            switch(arr[0])
+            switch (arr[0])
             {
                 case "Point":
                     return generatePoint(arr);
-                case "Slider":
+                case "Stream":
                     return generateSlider(arr);
+                case "":
+                    return arr.Length == 1;
             }
         }
         return false;
@@ -67,18 +60,14 @@ public class GenerateMap : MonoBehaviour
         }
         try
         {
-
-            float start = float.Parse(args[1], CultureInfo.InvariantCulture) / 1000.0f;
-            GameObject go = Instantiate(pointModel, transform);
-            go.transform.localPosition += Vector3.right * start * moveSpeed;
-            go.GetComponent<Point>().speed = moveSpeed;
-            go.GetComponent<Point>().color = Random.value;
+            float value = float.Parse(args[1], CultureInfo.InvariantCulture) / 1000.0f;
+            game.addPoint(value);
+            return true;
         }
         catch
         {
             return false;
         }
-        return true;
     }
 
     private bool generateSlider(string[] args)
@@ -92,12 +81,12 @@ public class GenerateMap : MonoBehaviour
 
             float start = float.Parse(args[1], CultureInfo.InvariantCulture);
             float end = float.Parse(args[2], CultureInfo.InvariantCulture);
-
+            game.addStream(start, end);
+            return true;
         }
         catch
         {
             return false;
         }
-        return false;
     }
 }

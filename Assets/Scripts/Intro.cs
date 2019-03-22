@@ -18,7 +18,7 @@ public class Intro : MonoBehaviour
         ready = true;
         colors = new float[3];
         colors[0] = 1.0f / 3.0f;
-        colors[1] = 2.0f / 3.0f;
+        colors[1] = -2.0f / 3.0f;
         colors[2] = 0.0f;
         room = 0;
         foreach (GameObject BackGround in rooms)

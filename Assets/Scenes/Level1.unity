@@ -458,6 +458,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ColorWheel
       objectReference: {fileID: 0}
+    - target: {fileID: 8476190137529364147, guid: 6f47c90f1ba8b3e4292e6ff7bd40bd29,
+        type: 3}
+      propertyPath: m_TagString
+      value: ColorPicker
+      objectReference: {fileID: 0}
     - target: {fileID: 8476190137529364149, guid: 6f47c90f1ba8b3e4292e6ff7bd40bd29,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1193,6 +1198,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blob
       objectReference: {fileID: 0}
+    - target: {fileID: 2313439531294683343, guid: b507db780a5bc1640b84c850c265e320,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 2313439531294683336, guid: b507db780a5bc1640b84c850c265e320,
         type: 3}
       propertyPath: m_RootOrder
@@ -1325,6 +1335,11 @@ PrefabInstance:
     - target: {fileID: 3323010270051262487, guid: 2b364c0508916774e8911c14689ba894,
         type: 3}
       propertyPath: m_Name
+      value: Lives
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323010270051262487, guid: 2b364c0508916774e8911c14689ba894,
+        type: 3}
+      propertyPath: m_TagString
       value: Lives
       objectReference: {fileID: 0}
     - target: {fileID: 3323010270051262481, guid: 2b364c0508916774e8911c14689ba894,

@@ -7,12 +7,6 @@ public class Scrolling : MonoBehaviour
     public float speed;
     public GameObject[] floor;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
-
-    // Update is called once per frame
     void Update()
     {
         foreach (GameObject ground in floor)

@@ -12,6 +12,7 @@ public class Point : MonoBehaviour
     [SerializeField]
     ColorPicker picker;
     private bool ready;
+    public Game game;
 
     IColorUtils colorUtils = new ColorUtils();
 
@@ -41,7 +42,17 @@ public class Point : MonoBehaviour
         }
         if (transform.localPosition.x < -10)
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        print("collide");
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            print("test");
+            game.collide(color);
         }
     }
 }

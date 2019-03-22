@@ -13,7 +13,6 @@ public class Stream : MonoBehaviour
     void Start()
     {
         float modelWidth = model.GetComponent<SpriteRenderer>().bounds.size.x * 2.0f / 3.0f;
-        spawnPoint(0.0f);
         for (float f = 0.0f; f < duration * speed; f += modelWidth)
         {
             spawnPoint(f);

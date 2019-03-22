@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Game : MonoBehaviour
 {
@@ -48,6 +49,12 @@ public class Game : MonoBehaviour
         }
     }
 
+    void OnBecameInvisible()
+    {
+        if (transform.localPosition.x < 0)
+            Destroy(gameObject);
+    }
+
     public void collide(float color)
     {
         ColorPicker.PointType points = picker.getPointType(color);
@@ -68,7 +75,7 @@ public class Game : MonoBehaviour
             case ColorPicker.PointType.Miss:
                 if (lives.LostLife())
                 {
-                    print("Game over");
+                    SceneManager.LoadScene("GameOver");
                 }
                 break;
         }

@@ -32,7 +32,6 @@ public class ColorPicker : MonoBehaviour
         {
             res = 1.0f - res;
         }
-        print(res);
         return res;
     }
 

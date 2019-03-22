@@ -8,12 +8,27 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Warning.unity
+    guid: ed7f8cfbf6e93cb4f907349b5c336163
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: e51bf1fad268a1146a5f6d8fe99d3a9f
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 2296c50387fe3ec4a8d1015a3a79fed4
   - enabled: 1
     path: Assets/Scenes/Intro.unity
     guid: d51bc0b828beec34fb957f1f8ddbf58c
   - enabled: 1
     path: Assets/Scenes/Level1.unity
-    guid: b883503e44f34934cab1714d772dc5bf
+    guid: a41057f77c2dfb74db869d15970711b5
+  - enabled: 1
+    path: Assets/Scenes/Level2.unity
+    guid: aaa673026ec47b34183049a35ba9af0c
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: fe8f581ac89f7294a8645862d9e18a7f
